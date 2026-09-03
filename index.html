@@ -8,8 +8,18 @@
     <title>SiteReel Solutions</title>
 
   <!-- Favicons -->
-  <link href="images/favicon.ico" rel="icon">
-  <link href="images/favicon.ico" rel="apple-touch-icon">
+  <link rel="icon" type="image/x-icon" href="images/icon/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/icon/sitereel_only_logo.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/icon/sitereel_only_logo.png">
+  <link rel="shortcut icon" href="images/icon/favicon.ico">
+
+  <!-- SEO & Social Meta -->
+  <meta name="description" content="SiteReel Solutions engineers custom software development, mobile app development, high-performance websites, and strategic AI & technologies consultation.">
+  <meta name="theme-color" content="#131313">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="SiteReel Solutions — Software, App, Website & AI Consultation">
+  <meta property="og:description" content="Engineering elite digital infrastructure, custom software, mobile apps, performant websites, and cutting-edge AI technologies consultation.">
+  <meta property="og:image" content="images/icon/sitereel_logo_transparent_ori.png">
 
     <!-- Google Fonts -->
     <link
@@ -31,32 +41,36 @@
 
         <div class="header-container">
 
-            <div class="logo-container">
+            <a href="#hero" class="logo-container">
 
-                <img src="images/icon/sitereel_only_logo.png">
+                <img src="images/icon/sitereel_only_logo.png" alt="SiteReel Solutions Logo">
 
                 <span class="logo-text">
                     SiteReel <span>Solutions</span>
                 </span>
 
-            </div>
+            </a>
 
 
             <nav class="navigation">
 
-                <a href="#" class="nav-link">
+                <a href="#hero" class="nav-link active">
                     Home
                 </a>
 
-                <a href="#" class="nav-link">
+                <a href="#our-services" class="nav-link">
                     Our Services
                 </a>
 
-                <a href="#" class="nav-link">
+                <a href="#process" class="nav-link">
+                    Our Process
+                </a>
+
+                <a href="#about-us" class="nav-link">
                     About Us
                 </a>
 
-                <a href="#" class="nav-link">
+                <a href="#contact" class="nav-link">
                     Contact Us
                 </a>
 
@@ -84,7 +98,7 @@
     <main>
 
         <!-- HERO SECTION -->
-        <section class="hero">
+        <section id="hero" class="hero">
 
             <!-- WebGL Background -->
             <div class="shader-container">
@@ -125,21 +139,21 @@
 
                 <p class="hero-description">
 
-                    SiteReel Solutions helps startups scale with precision and kinetic
-                    design. We engineer elite digital infrastructure for technical
-                    authority and uncompromising professional standards.
+                    SiteReel Solutions helps startups and businesses scale with precision and kinetic
+                    design. We engineer elite software, mobile apps, performant websites, and cutting-edge
+                    AI architectures for technical authority.
 
                 </p>
 
 
                 <div class="hero-buttons">
 
-                    <button class="primary-button">
+                    <button class="primary-button btn-get-started" type="button">
                         <span>Get Started</span>
                     </button>
 
 
-                    <button class="secondary-button">
+                    <button class="secondary-button btn-our-process" type="button">
                         Our Process
                     </button>
 
@@ -161,83 +175,131 @@
             <div class="services__inner">
 
                 <div class="services__header">
-                    <span class="services__eyebrow reveal" data-delay="0">Capabilities</span>
+                    <span class="services__eyebrow reveal" data-delay="0">Core Capabilities</span>
                     <h2 class="services__title reveal" data-delay="1">Our Services</h2>
                     <p class="services__subtitle reveal" data-delay="2">
-                        Six disciplines, one build process — from first pixel to production infrastructure.
+                        Engineering-first digital execution across software systems, mobile applications, modern web platforms, and artificial intelligence.
                     </p>
                 </div>
 
                 <div class="services__grid">
 
-                    <article class="service-card reveal" data-delay="0">
-                        <div class="service-card__icon">
-                            <span class="service-card__icon-glyph"></span>
-                        </div>
-                        <h3 class="service-card__title">Digital Consultation</h3>
-                        <p class="service-card__desc">Turn your idea into a clear digital plan. We help you identify the
-                            right technology, features, platforms, and strategy for your business before development
-                            begins.</p>
-                        <span class="service-card__arrow">↗</span>
-                    </article>
-
-                    <article class="service-card reveal" data-delay="1">
-                        <div class="service-card__icon">
-                            <span class="service-card__icon-glyph">🌐</span>
-                        </div>
-                        <h3 class="service-card__title">Website Development</h3>
-                        <p class="service-card__desc">Websites built for your brand. We design and develop modern,
-                            responsive websites that represent your brand and create meaningful experiences for your
-                            customers.</p>
-                        <span class="service-card__arrow">↗</span>
-                    </article>
-
-                    <article class="service-card reveal" data-delay="2">
-                        <div class="service-card__icon">
-                            <span class="service-card__icon-glyph">✦</span>
-                        </div>
-                        <h3 class="service-card__title">Web &amp; App Marketing</h3>
-                        <p class="service-card__desc">Build it. Launch it. Grow it. We help your digital products reach
-                            the right audience through strategic marketing, online visibility, and growth-focused
-                            campaigns.</p>
-                        <span class="service-card__arrow">↗</span>
-                    </article>
-
-                    <article class="service-card reveal" data-delay="3">
+                    <article class="service-card reveal" data-delay="0" data-service="Software Development" title="Click to request Software Development consultation">
                         <div class="service-card__icon">
                             <span class="service-card__icon-glyph">⬡</span>
                         </div>
                         <h3 class="service-card__title">Software Development</h3>
-                        <p class="service-card__desc">Software designed around your business. We develop custom software
-                            solutions that simplify processes, solve business challenges, and turn your ideas into
-                            practical digital products.</p>
+                        <p class="service-card__desc">Custom software engineered around your operations. We develop enterprise architectures, robust microservices, cloud APIs, and scalable platforms built to endure high load.</p>
                         <span class="service-card__arrow">↗</span>
                     </article>
 
-                    <article class="service-card reveal" data-delay="4">
+                    <article class="service-card reveal" data-delay="1" data-service="App Development" title="Click to request App Development consultation">
                         <div class="service-card__icon">
                             <span class="service-card__icon-glyph">📱</span>
                         </div>
                         <h3 class="service-card__title">App Development</h3>
-                        <p class="service-card__desc">Mobile experiences made for modern users. We build intuitive and
-                            reliable mobile applications designed around your users, business goals, and product vision.
-                        </p>
+                        <p class="service-card__desc">Intuitive, high-performance mobile experiences for iOS &amp; Android. We build native and cross-platform apps designed around user retention, fluidity, and your product vision.</p>
                         <span class="service-card__arrow">↗</span>
                     </article>
 
-                    <article class="service-card reveal" data-delay="5">
+                    <article class="service-card reveal" data-delay="2" data-service="Website Development" title="Click to request Website Development consultation">
+                        <div class="service-card__icon">
+                            <span class="service-card__icon-glyph">🌐</span>
+                        </div>
+                        <h3 class="service-card__title">Website Development</h3>
+                        <p class="service-card__desc">Websites and web apps built for technical authority. We engineer blazing-fast, responsive web interfaces with kinetic motion, high SEO scores, and exceptional conversion rates.</p>
+                        <span class="service-card__arrow">↗</span>
+                    </article>
+
+                    <article class="service-card reveal" data-delay="3" data-service="AI &amp; Technologies Consultation" title="Click to request AI &amp; Tech Consultation">
+                        <div class="service-card__icon">
+                            <span class="service-card__icon-glyph">✦</span>
+                        </div>
+                        <h3 class="service-card__title">AI &amp; Tech Consultation</h3>
+                        <p class="service-card__desc">Harness machine intelligence and modern stack choices. We assist in deploying LLM agents, intelligent workflow automation, data pipelines, and strategic technology roadmaps.</p>
+                        <span class="service-card__arrow">↗</span>
+                    </article>
+
+                    <article class="service-card reveal" data-delay="4" data-service="Cloud &amp; DevOps Infrastructure" title="Click to request Cloud &amp; DevOps consultation">
+                        <div class="service-card__icon">
+                            <span class="service-card__icon-glyph">☁</span>
+                        </div>
+                        <h3 class="service-card__title">Cloud &amp; DevOps</h3>
+                        <p class="service-card__desc">Resilient cloud infrastructure and automated CI/CD deployments. We implement containerization, security policies, and autoscaling across AWS, Google Cloud, and edge networks.</p>
+                        <span class="service-card__arrow">↗</span>
+                    </article>
+
+                    <article class="service-card reveal" data-delay="5" data-service="Product Support &amp; Maintenance" title="Click to request Product Support">
                         <div class="service-card__icon">
                             <span class="service-card__icon-glyph">⚙</span>
                         </div>
-                        <h3 class="service-card__title">Product Support &amp; Growth</h3>
-                        <p class="service-card__desc">Your digital product doesn't stop at launch. We provide ongoing
-                            support, improvements, maintenance, and growth assistance to keep your website, software, or
-                            app performing at its best.</p>
+                        <h3 class="service-card__title">Support &amp; Maintenance</h3>
+                        <p class="service-card__desc">Your product doesn't stop at launch. We provide 24/7 reliability monitoring, continuous security patches, version upgrades, and ongoing iterative feature enhancements.</p>
                         <span class="service-card__arrow">↗</span>
                     </article>
 
                 </div>
             </div>
+        </section>
+
+        <!-- OUR PROCESS SECTION -->
+        <section id="process" class="process">
+
+            <div class="process__orb process__orb--1" aria-hidden="true"></div>
+            <div class="process__orb process__orb--2" aria-hidden="true"></div>
+            <div class="process__grain" aria-hidden="true"></div>
+
+            <div class="process__inner">
+
+                <div class="process__header">
+                    <span class="process__eyebrow">Methodology</span>
+                    <h2 class="process__title">Our <span class="process__title-accent">Build Process</span></h2>
+                    <p class="process__subtitle">
+                        From initial discovery to production infrastructure — a transparent, structured engineering lifecycle designed for speed, stability, and growth.
+                    </p>
+                </div>
+
+                <div class="process__grid">
+
+                    <article class="process-card">
+                        <span class="process-card__step">01</span>
+                        <h3 class="process-card__title">Discovery &amp; Architecture</h3>
+                        <p class="process-card__desc">We dissect your business model, map technical requirements, evaluate AI opportunities, and select the optimal modern stack.</p>
+                        <span class="process-card__tag">Technical Blueprint</span>
+                    </article>
+
+                    <article class="process-card">
+                        <span class="process-card__step">02</span>
+                        <h3 class="process-card__title">Kinetic Design &amp; UI/UX</h3>
+                        <p class="process-card__desc">We craft interactive, high-fidelity prototypes with kinetic motion design, validating user flows before a single line of backend code.</p>
+                        <span class="process-card__tag">Interactive Design</span>
+                    </article>
+
+                    <article class="process-card">
+                        <span class="process-card__step">03</span>
+                        <h3 class="process-card__title">Agile Build &amp; AI Integration</h3>
+                        <p class="process-card__desc">Rapid sprint cycles delivering clean, test-covered code, scalable database schemas, microservices, and AI integrations.</p>
+                        <span class="process-card__tag">Production Code</span>
+                    </article>
+
+                    <article class="process-card">
+                        <span class="process-card__step">04</span>
+                        <h3 class="process-card__title">Rigorous QA &amp; Performance</h3>
+                        <p class="process-card__desc">Exhaustive automated testing, load benchmarks, security audits, accessibility (a11y) checks, and Core Web Vitals optimization.</p>
+                        <span class="process-card__tag">Zero Regressions</span>
+                    </article>
+
+                    <article class="process-card">
+                        <span class="process-card__step">05</span>
+                        <h3 class="process-card__title">Deployment &amp; Growth</h3>
+                        <p class="process-card__desc">Smooth zero-downtime deployment, automated CI/CD pipelines, SLA-backed monitoring, and proactive iteration as your product scales.</p>
+                        <span class="process-card__tag">24/7 SLA Support</span>
+                    </article>
+
+                </div>
+
+            </div>
+
         </section>
 
         <!-- =====================================================================
@@ -292,29 +354,34 @@
 
                         <ul class="about__list">
                             <li class="about__list-item">
-                                <span class="about__list-icon">📈</span>
+                                <span class="about__list-icon">⬡</span>
                                 <div>
-                                    <span class="about__list-title">Consultation &amp; Growth Strategy</span>
-                                    <span class="about__list-desc">Practical guidance on how to use technology to grow
-                                        your business.</span>
+                                    <span class="about__list-title">Software Development</span>
+                                    <span class="about__list-desc">Enterprise software, scalable microservices, and bespoke cloud architectures.</span>
+                                </div>
+                            </li>
+
+                            <li class="about__list-item">
+                                <span class="about__list-icon">📱</span>
+                                <div>
+                                    <span class="about__list-title">App Development</span>
+                                    <span class="about__list-desc">Native &amp; cross-platform iOS and Android mobile applications built for retention.</span>
                                 </div>
                             </li>
 
                             <li class="about__list-item">
                                 <span class="about__list-icon">🌐</span>
                                 <div>
-                                    <span class="about__list-title">Websites &amp; Web Apps</span>
-                                    <span class="about__list-desc">Fast, modern builds designed around how your
-                                        customers actually use them.</span>
+                                    <span class="about__list-title">Website Development</span>
+                                    <span class="about__list-desc">Fast, responsive websites with kinetic design, high search ranking, and conversion focus.</span>
                                 </div>
                             </li>
 
                             <li class="about__list-item">
-                                <span class="about__list-icon">⬡</span>
+                                <span class="about__list-icon">✦</span>
                                 <div>
-                                    <span class="about__list-title">Custom Software</span>
-                                    <span class="about__list-desc">Tools built specifically around how your business
-                                        already operates.</span>
+                                    <span class="about__list-title">AI &amp; Technologies Consultation</span>
+                                    <span class="about__list-desc">LLM agent deployment, data engineering, modern tech stack evaluation, and digital roadmap advisory.</span>
                                 </div>
                             </li>
 
@@ -322,8 +389,7 @@
                                 <span class="about__list-icon">⚙</span>
                                 <div>
                                     <span class="about__list-title">Maintenance &amp; Support</span>
-                                    <span class="about__list-desc">We don't disappear after launch — ongoing support is
-                                        part of the deal.</span>
+                                    <span class="about__list-desc">We don't disappear after launch — 24/7 reliability, proactive monitoring, and ongoing support.</span>
                                 </div>
                             </li>
                         </ul>
@@ -345,11 +411,10 @@
                         <div class="founder-card__avatar">
                             <span class="founder-card__avatar-icon">💻</span>
                         </div>
-                        <h4 class="founder-card__name">Founder One</h4>
-                        <span class="founder-card__role">Co-Founder · Engineering</span>
+                        <h4 class="founder-card__name">Engineering Lead</h4>
+                        <span class="founder-card__role">Co-Founder · Architecture &amp; Systems</span>
                         <p class="founder-card__bio">
-                            Focused on building clean, reliable software — from the first line of code
-                            to the systems that keep it running smoothly long after launch.
+                            Specializing in distributed backend architectures, scalable database schemas, high-performance APIs, and AI integrations that operate reliably under scale.
                         </p>
                     </article>
 
@@ -357,11 +422,10 @@
                         <div class="founder-card__avatar">
                             <span class="founder-card__avatar-icon">🎯</span>
                         </div>
-                        <h4 class="founder-card__name">Founder Two</h4>
-                        <span class="founder-card__role">Co-Founder · Design &amp; Strategy</span>
+                        <h4 class="founder-card__name">Product Lead</h4>
+                        <span class="founder-card__role">Co-Founder · Kinetic Design &amp; Strategy</span>
                         <p class="founder-card__bio">
-                            Focused on turning ideas into clear, usable design and helping clients
-                            figure out what will actually move their business forward.
+                            Specializing in intuitive UX flows, kinetic motion design, brand positioning, and helping clients define features that create tangible business value.
                         </p>
                     </article>
 
@@ -373,22 +437,19 @@
                     <div class="pillar about-reveal" data-dir="left" data-delay="0">
                         <span class="pillar__icon">🤝</span>
                         <h4 class="pillar__title">Founder-Level Attention</h4>
-                        <p class="pillar__desc">You work directly with us — every project gets our full, undivided
-                            focus.</p>
+                        <p class="pillar__desc">You work directly with us — every project gets our full, undivided focus without intermediary agency layers.</p>
                     </div>
 
                     <div class="pillar about-reveal" data-dir="right" data-delay="1">
                         <span class="pillar__icon">⚡</span>
                         <h4 class="pillar__title">Modern, Future-Proof Builds</h4>
-                        <p class="pillar__desc">Current best practices and technology, so you're not stuck rebuilding in
-                            two years.</p>
+                        <p class="pillar__desc">Engineered with today's state-of-the-art standards and AI capabilities, so your tech never becomes obsolete.</p>
                     </div>
 
                     <div class="pillar about-reveal" data-dir="left" data-delay="2">
                         <span class="pillar__icon">🌱</span>
                         <h4 class="pillar__title">Growing Together</h4>
-                        <p class="pillar__desc">Our success depends on yours. Early clients get our full investment in
-                            getting it right.</p>
+                        <p class="pillar__desc">Our reputation is tied to your launch outcome. Early clients get our complete technical dedication.</p>
                     </div>
 
                 </div>
@@ -396,6 +457,123 @@
             </div>
         </section>
         <!-- ================= END ABOUT US SECTION HTML ================= -->
+
+        <!-- ================= CONTACT US SECTION ================= -->
+        <section id="contact" class="contact">
+
+            <div class="contact__orb contact__orb--1" aria-hidden="true"></div>
+            <div class="contact__orb contact__orb--2" aria-hidden="true"></div>
+            <div class="contact__grain" aria-hidden="true"></div>
+
+            <div class="contact__inner">
+
+                <div class="contact__header">
+                    <span class="contact__eyebrow">Get In Touch</span>
+                    <h2 class="contact__title">Start Your <span class="contact__title-accent">Next Project</span></h2>
+                    <p class="contact__subtitle">
+                        Ready to build custom software, an intuitive mobile app, a performant website, or integrate AI into your workflow? Talk directly with our founding team.
+                    </p>
+                </div>
+
+                <div class="contact__grid">
+
+                    <div class="contact__info-card">
+                        <h3 class="contact__info-title">Let's talk tech &amp; strategy</h3>
+                        <p class="contact__info-desc">
+                            No sales reps, no runarounds. You'll converse directly with the engineers and architects responsible for delivering your product.
+                        </p>
+
+                        <div class="contact__channels">
+                            <a href="mailto:contact@sitereelsolutions.com" class="contact-channel" title="Email SiteReel Solutions">
+                                <span class="contact-channel__icon">✉</span>
+                                <div>
+                                    <span class="contact-channel__label">Direct Inquiries</span>
+                                    <span class="contact-channel__val">contact@sitereelsolutions.com</span>
+                                </div>
+                            </a>
+
+                            <div class="contact-channel">
+                                <span class="contact-channel__icon">⏱</span>
+                                <div>
+                                    <span class="contact-channel__label">Guaranteed Response</span>
+                                    <span class="contact-channel__val">Within 24 Hours</span>
+                                </div>
+                            </div>
+
+                            <div class="contact-channel">
+                                <span class="contact-channel__icon">📍</span>
+                                <div>
+                                    <span class="contact-channel__label">Studio Focus</span>
+                                    <span class="contact-channel__val">Remote Worldwide / Global Delivery</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contact__direct-chat">
+                            <div class="contact__direct-title">Founding Client Program</div>
+                            <p class="contact__direct-desc">
+                                We are currently taking on founding clients. Early partners receive founder-level attention, weekly architectural reviews, and preferred lifecycle terms.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="contact__form-card">
+                        <form id="consultation-form" class="contact-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="contact-name">Your Name</label>
+                                    <input type="text" id="contact-name" name="name" class="form-input" placeholder="e.g. Alex Morgan" required autocomplete="name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="contact-email">Work Email</label>
+                                    <input type="email" id="contact-email" name="email" class="form-input" placeholder="alex@company.com" required autocomplete="email">
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="service-select">Required Service</label>
+                                    <select id="service-select" name="service" class="form-select" required>
+                                        <option value="">Select a service...</option>
+                                        <option value="Software Development">Software Development</option>
+                                        <option value="App Development">App Development</option>
+                                        <option value="Website Development">Website Development</option>
+                                        <option value="AI &amp; Technologies Consultation">AI &amp; Technologies Consultation</option>
+                                        <option value="Cloud &amp; DevOps Infrastructure">Cloud &amp; DevOps Infrastructure</option>
+                                        <option value="Product Support &amp; Maintenance">Product Support &amp; Maintenance</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="timeline-select">Target Timeline</label>
+                                    <select id="timeline-select" name="timeline" class="form-select">
+                                        <option value="Immediate (< 1 month)">Immediate (&lt; 1 month)</option>
+                                        <option value="1 to 3 months" selected>1 to 3 months</option>
+                                        <option value="3 to 6 months">3 to 6 months</option>
+                                        <option value="Exploring / Advisory">Exploring / Advisory</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="contact-message">Project Brief &amp; Details</label>
+                                <textarea id="contact-message" name="message" class="form-textarea" placeholder="Describe what you want to build, existing systems, or your vision..." required></textarea>
+                            </div>
+
+                            <button type="submit" class="primary-button form-submit-btn">
+                                <span>Request Consultation ↗</span>
+                            </button>
+
+                            <div id="form-status" class="form-status" role="status" aria-live="polite"></div>
+                        </form>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+        <!-- ================= END CONTACT US SECTION ================= -->
     </main>
 
 
@@ -414,43 +592,96 @@
                     </div>
 
                     <p>
-                        Engineering elite digital infrastructure for technical
-                        authority and uncompromising professional standards.
+                        Engineering elite software, mobile applications, high-performance websites, and AI technologies consultation for technical authority and uncompromising standards.
                     </p>
 
                 </div>
 
 
-                <!-- Connect -->
+                <!-- Navigation -->
                 <div class="footer-column">
 
                     <span class="footer-title">
-                        Connect
+                        Navigation
                     </span>
 
-                    <a href="#">
-                        LinkedIn
+                    <a href="#hero">
+                        Home
                     </a>
 
-                    <a href="#">
-                        GitHub
+                    <a href="#our-services">
+                        Our Services
+                    </a>
+
+                    <a href="#process">
+                        Our Process
+                    </a>
+
+                    <a href="#about-us">
+                        About Us
+                    </a>
+
+                    <a href="#contact">
+                        Contact Us
                     </a>
 
                 </div>
 
 
-                <!-- Legal -->
+                <!-- Core Capabilities -->
                 <div class="footer-column">
 
                     <span class="footer-title">
-                        Legal
+                        Capabilities
                     </span>
 
-                    <a href="#">
+                    <a href="services.html#software">
+                        Software Development
+                    </a>
+
+                    <a href="services.html#app">
+                        App Development
+                    </a>
+
+                    <a href="services.html#website">
+                        Website Development
+                    </a>
+
+                    <a href="services.html#ai">
+                        AI &amp; Tech Consultation
+                    </a>
+
+                    <a href="services.html#support">
+                        Product Support &amp; SLA
+                    </a>
+
+                </div>
+
+
+                <!-- Connect & Legal -->
+                <div class="footer-column">
+
+                    <span class="footer-title">
+                        Connect &amp; Legal
+                    </span>
+
+                    <a href="mailto:contact@sitereelsolutions.com">
+                        contact@sitereelsolutions.com
+                    </a>
+
+                    <a href="https://github.com/rakesh-mishra5719/sitereelsolutions" target="_blank" rel="noopener noreferrer">
+                        GitHub ↗
+                    </a>
+
+                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+                        LinkedIn ↗
+                    </a>
+
+                    <a href="privacy.html">
                         Privacy Policy
                     </a>
 
-                    <a href="#">
+                    <a href="terms.html">
                         Terms of Service
                     </a>
 
@@ -468,11 +699,17 @@
 
                 <div class="footer-icons">
 
-                    <span class="material-symbols-outlined">
+                    <a href="#hero" title="Return to top" style="display:flex;align-items:center;">
+                        <span class="material-symbols-outlined">
+                            arrow_upward
+                        </span>
+                    </a>
+
+                    <span class="material-symbols-outlined" title="Global Deployment">
                         language
                     </span>
 
-                    <span class="material-symbols-outlined">
+                    <span class="material-symbols-outlined" title="System Status: Operational">
                         settings
                     </span>
 

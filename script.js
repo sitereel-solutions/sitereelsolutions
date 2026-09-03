@@ -671,3 +671,167 @@ navLinks.forEach((link) => {
 
     revealEls.forEach((el) => io.observe(el));
 })();
+
+/* =====================================================================
+   PROCESS & CONTACT REVEAL OBSERVERS
+===================================================================== */
+
+(function () {
+    const processSection = document.getElementById("process");
+    if (processSection) {
+        const pCards = processSection.querySelectorAll(".process-card");
+        pCards.forEach((card, idx) => {
+            card.classList.add("reveal");
+            card.style.setProperty("--d", idx);
+        });
+
+        const io = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("in-view");
+                    io.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.15, rootMargin: "0px 0px -40px 0px" });
+
+        pCards.forEach((c) => io.observe(c));
+    }
+
+    const contactSection = document.getElementById("contact");
+    if (contactSection) {
+        const cCards = contactSection.querySelectorAll(".contact__info-card, .contact__form-card");
+        cCards.forEach((card, idx) => {
+            card.classList.add("reveal");
+            card.style.setProperty("--d", idx);
+        });
+
+        const io = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("in-view");
+                    io.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.15, rootMargin: "0px 0px -40px 0px" });
+
+        cCards.forEach((c) => io.observe(c));
+    }
+})();
+
+/* =====================================================================
+   CONTACT FORM & SERVICE CARD INTERACTION
+===================================================================== */
+
+document.addEventListener("DOMContentLoaded", () => {
+    // 1. Service Cards Click -> Pre-fill Contact Form
+    const serviceCards = document.querySelectorAll(".service-card");
+    const serviceSelect = document.getElementById("service-select");
+
+    serviceCards.forEach((card) => {
+        card.addEventListener("click", () => {
+            const serviceKey = card.getAttribute("data-service");
+            if (serviceSelect && serviceKey) {
+                serviceSelect.value = serviceKey;
+            }
+            const contactSection = document.getElementById("contact");
+            if (contactSection) {
+                contactSection.scrollIntoView({ behavior: "smooth" });
+                const nameInput = document.getElementById("contact-name");
+                if (nameInput) {
+                    setTimeout(() => nameInput.focus(), 600);
+                }
+            }
+        });
+    });
+
+    // 2. Hero CTA Buttons
+    const getStartedBtns = document.querySelectorAll(".btn-get-started");
+    getStartedBtns.forEach((btn) => {
+        btn.addEventListener("click", (e) => {
+            e.preventDefault();
+            const contact = document.getElementById("contact");
+            if (contact) {
+                contact.scrollIntoView({ behavior: "smooth" });
+            } else {
+                window.location.href = "contact.html";
+            }
+        });
+    });
+
+    const ourProcessBtns = document.querySelectorAll(".btn-our-process");
+    ourProcessBtns.forEach((btn) => {
+        btn.addEventListener("click", (e) => {
+            e.preventDefault();
+            const process = document.getElementById("process");
+            if (process) {
+                process.scrollIntoView({ behavior: "smooth" });
+            } else {
+                window.location.href = "index.html#process";
+            }
+        });
+    });
+
+    // 3. Contact Form Submission
+    const contactForm = document.getElementById("consultation-form");
+    const formStatus = document.getElementById("form-status");
+
+    if (contactForm && formStatus) {
+        contactForm.addEventListener("submit", (e) => {
+            e.preventDefault();
+
+            const submitBtn = contactForm.querySelector("button[type='submit']");
+            const originalText = submitBtn ? submitBtn.innerHTML : "";
+
+            if (submitBtn) {
+                submitBtn.disabled = true;
+                submitBtn.innerHTML = "<span>Transmitting Inquiry...</span>";
+            }
+
+            // Simulate quick transmission & response
+            setTimeout(() => {
+                formStatus.className = "form-status is-success";
+                formStatus.innerHTML = "<strong>Message Received.</strong> Thank you for reaching out to SiteReel Solutions. A technical partner will review your requirements and respond within 24 hours.";
+                formStatus.style.display = "block";
+
+                contactForm.reset();
+
+                if (submitBtn) {
+                    submitBtn.disabled = false;
+                    submitBtn.innerHTML = originalText;
+                }
+
+                formStatus.scrollIntoView({ behavior: "smooth", block: "nearest" });
+            }, 800);
+        });
+    }
+
+    // 4. Highlight Nav Link on Scroll
+    const sections = document.querySelectorAll("section[id]");
+    const navLinksList = document.querySelectorAll(".navigation .nav-link");
+
+    if (sections.length > 0 && navLinksList.length > 0) {
+        window.addEventListener("scroll", () => {
+            let current = "";
+            const scrollPos = window.scrollY + 120;
+
+            sections.forEach((section) => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.offsetHeight;
+                if (scrollPos >= sectionTop && scrollPos < sectionTop + sectionHeight) {
+                    current = section.getAttribute("id");
+                }
+            });
+
+            navLinksList.forEach((link) => {
+                const href = link.getAttribute("href");
+                if (href && (href === `#${current}` || href.endsWith(`#${current}`))) {
+                    link.classList.add("active");
+                } else if (!href.includes("#") && current === "" && href.includes("index.html")) {
+                    link.classList.add("active");
+                } else {
+                    link.classList.remove("active");
+                }
+            });
+        });
+    }
+});

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact & Consultation | SiteReel Solutions</title>
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="images/icon/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/icon/sitereel_only_logo.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/icon/sitereel_only_logo.png">
+    <link rel="shortcut icon" href="images/icon/favicon.ico">
+
+    <!-- SEO & Social Meta -->
+    <meta name="description" content="Request a consultation with SiteReel Solutions. Discuss custom software development, mobile apps, web engineering, or AI advisory directly with our founders.">
+    <meta name="theme-color" content="#131313">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Contact Us | SiteReel Solutions">
+    <meta property="og:description" content="Schedule a technical consultation for your software, app, website, or AI project.">
+    <meta property="og:image" content="images/icon/sitereel_logo_transparent_ori.png">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Hanken+Grotesk:wght@400;500&family=Geist:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- Material Symbols -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700;1&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <header id="header">
+        <div class="header-container">
+            <a href="index.html#hero" class="logo-container">
+                <img src="images/icon/sitereel_only_logo.png" alt="SiteReel Solutions Logo">
+                <span class="logo-text">
+                    SiteReel <span>Solutions</span>
+                </span>
+            </a>
+
+            <nav class="navigation">
+                <a href="index.html#hero" class="nav-link">Home</a>
+                <a href="services.html" class="nav-link">Our Services</a>
+                <a href="index.html#process" class="nav-link">Our Process</a>
+                <a href="about.html" class="nav-link">About Us</a>
+                <a href="contact.html" class="nav-link active">Contact Us</a>
+            </nav>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Open navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- ================= MAIN ================= -->
+    <main>
+
+        <!-- PAGE HERO -->
+        <section class="page-hero">
+            <div class="page-hero__inner">
+                <div class="page-hero__badge">
+                    <span></span>
+                    <span>Direct Founder Access</span>
+                </div>
+                <h1 class="page-hero__title">
+                    Let's Build Something <span class="gradient-text">Extraordinary</span>
+                </h1>
+                <p class="page-hero__subtitle">
+                    Whether you're starting from scratch, scaling existing systems, or looking to integrate AI intelligence, share your requirements and get a detailed response within 24 hours.
+                </p>
+            </div>
+        </section>
+
+        <!-- CONTACT INTERACTION SECTION -->
+        <section class="contact" style="border-top: none; padding-top: 60px;">
+            <div class="contact__orb contact__orb--1" aria-hidden="true"></div>
+            <div class="contact__orb contact__orb--2" aria-hidden="true"></div>
+            <div class="contact__grain" aria-hidden="true"></div>
+
+            <div class="contact__inner">
+                <div class="contact__grid">
+
+                    <!-- Info Column -->
+                    <div class="contact__info-card">
+                        <h2 class="contact__info-title">Consultation Details</h2>
+                        <p class="contact__info-desc">
+                            We value your time. No high-pressure sales calls. When you contact us, you will talk directly with an engineering partner who understands technology architecture from day one.
+                        </p>
+
+                        <div class="contact__channels">
+                            <a href="mailto:contact@sitereelsolutions.com" class="contact-channel">
+                                <span class="contact-channel__icon">✉</span>
+                                <div>
+                                    <span class="contact-channel__label">Direct Inquiries</span>
+                                    <span class="contact-channel__val">contact@sitereelsolutions.com</span>
+                                </div>
+                            </a>
+
+                            <div class="contact-channel">
+                                <span class="contact-channel__icon">⏱</span>
+                                <div>
+                                    <span class="contact-channel__label">Guaranteed SLA</span>
+                                    <span class="contact-channel__val">Reply within 24 hours</span>
+                                </div>
+                            </div>
+
+                            <div class="contact-channel">
+                                <span class="contact-channel__icon">📍</span>
+                                <div>
+                                    <span class="contact-channel__label">Global Delivery</span>
+                                    <span class="contact-channel__val">Remote worldwide / Sync with your timezone</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contact__direct-chat">
+                            <div class="contact__direct-title">Founding Client Program</div>
+                            <p class="contact__direct-desc">
+                                We are currently onboarding our founding cohort of clients. Enjoy direct cell/Slack access to founders, flexible milestone pricing, and lifelong maintenance discounts.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Form Column -->
+                    <div class="contact__form-card">
+                        <form id="consultation-form" class="contact-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="contact-name">Your Name</label>
+                                    <input type="text" id="contact-name" name="name" class="form-input" placeholder="e.g. Alex Morgan" required autocomplete="name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="contact-email">Work Email</label>
+                                    <input type="email" id="contact-email" name="email" class="form-input" placeholder="alex@company.com" required autocomplete="email">
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="service-select">Required Service</label>
+                                    <select id="service-select" name="service" class="form-select" required>
+                                        <option value="">Select a service...</option>
+                                        <option value="Software Development">Software Development</option>
+                                        <option value="App Development">App Development</option>
+                                        <option value="Website Development">Website Development</option>
+                                        <option value="AI &amp; Technologies Consultation">AI &amp; Technologies Consultation</option>
+                                        <option value="Cloud &amp; DevOps Infrastructure">Cloud &amp; DevOps Infrastructure</option>
+                                        <option value="Product Support &amp; Maintenance">Product Support &amp; Maintenance</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="timeline-select">Target Timeline</label>
+                                    <select id="timeline-select" name="timeline" class="form-select">
+                                        <option value="Immediate (< 1 month)">Immediate (&lt; 1 month)</option>
+                                        <option value="1 to 3 months" selected>1 to 3 months</option>
+                                        <option value="3 to 6 months">3 to 6 months</option>
+                                        <option value="Exploring / Advisory">Exploring / Advisory</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="contact-message">Project Brief &amp; Requirements</label>
+                                <textarea id="contact-message" name="message" class="form-textarea" placeholder="Tell us about the project goals, tech preferences, or existing systems..." required></textarea>
+                            </div>
+
+                            <button type="submit" class="primary-button form-submit-btn">
+                                <span>Send Consultation Request ↗</span>
+                            </button>
+
+                            <div id="form-status" class="form-status" role="status" aria-live="polite"></div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-company">
+                    <div class="footer-logo">SiteReel Solutions</div>
+                    <p>Engineering elite software, mobile applications, high-performance websites, and AI technologies consultation for technical authority and uncompromising standards.</p>
+                </div>
+
+                <div class="footer-column">
+                    <span class="footer-title">Navigation</span>
+                    <a href="index.html#hero">Home</a>
+                    <a href="services.html">Our Services</a>
+                    <a href="index.html#process">Our Process</a>
+                    <a href="about.html">About Us</a>
+                    <a href="contact.html">Contact Us</a>
+                </div>
+
+                <div class="footer-column">
+                    <span class="footer-title">Capabilities</span>
+                    <a href="services.html#software">Software Development</a>
+                    <a href="services.html#app">App Development</a>
+                    <a href="services.html#website">Website Development</a>
+                    <a href="services.html#ai">AI &amp; Tech Consultation</a>
+                    <a href="services.html#support">Cloud &amp; SLA Support</a>
+                </div>
+
+                <div class="footer-column">
+                    <span class="footer-title">Connect &amp; Legal</span>
+                    <a href="mailto:contact@sitereelsolutions.com">contact@sitereelsolutions.com</a>
+                    <a href="https://github.com/rakesh-mishra5719/sitereelsolutions" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Service</a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2026 SiteReel SOLUTIONS. ALL RIGHTS RESERVED.</p>
+                <div class="footer-icons">
+                    <a href="#" title="Return to top" style="display:flex;align-items:center;">
+                        <span class="material-symbols-outlined">arrow_upward</span>
+                    </a>
+                    <span class="material-symbols-outlined">language</span>
+                    <span class="material-symbols-outlined">settings</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+    <script>
+        // Check URL params to pre-select service
+        document.addEventListener('DOMContentLoaded', () => {
+            const params = new URLSearchParams(window.location.search);
+            const requestedService = params.get('service');
+            if (requestedService) {
+                const select = document.getElementById('service-select');
+                if (select) {
+                    for (let opt of select.options) {
+                        if (opt.value.toLowerCase().includes(requestedService.toLowerCase())) {
+                            opt.selected = true;
+                            break;
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>

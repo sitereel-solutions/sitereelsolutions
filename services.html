@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Services | SiteReel Solutions — Software, App, Website & AI Consultation</title>
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="images/icon/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/icon/sitereel_only_logo.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/icon/sitereel_only_logo.png">
+    <link rel="shortcut icon" href="images/icon/favicon.ico">
+
+    <!-- SEO & Social Meta -->
+    <meta name="description" content="Explore SiteReel Solutions capabilities: custom software development, mobile app development, responsive websites, and AI technologies consultation.">
+    <meta name="theme-color" content="#131313">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Services | SiteReel Solutions">
+    <meta property="og:description" content="Software Development, App Development, Website Development, and AI Technologies Consultation.">
+    <meta property="og:image" content="images/icon/sitereel_logo_transparent_ori.png">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Hanken+Grotesk:wght@400;500&family=Geist:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- Material Symbols -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700;1&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <header id="header">
+        <div class="header-container">
+            <a href="index.html#hero" class="logo-container">
+                <img src="images/icon/sitereel_only_logo.png" alt="SiteReel Solutions Logo">
+                <span class="logo-text">
+                    SiteReel <span>Solutions</span>
+                </span>
+            </a>
+
+            <nav class="navigation">
+                <a href="index.html#hero" class="nav-link">Home</a>
+                <a href="services.html" class="nav-link active">Our Services</a>
+                <a href="index.html#process" class="nav-link">Our Process</a>
+                <a href="about.html" class="nav-link">About Us</a>
+                <a href="contact.html" class="nav-link">Contact Us</a>
+            </nav>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Open navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- ================= MAIN ================= -->
+    <main>
+
+        <!-- PAGE HERO -->
+        <section class="page-hero">
+            <div class="page-hero__inner">
+                <div class="page-hero__badge">
+                    <span></span>
+                    <span>Engineering Capabilities</span>
+                </div>
+                <h1 class="page-hero__title">
+                    Disciplined Engineering for <span class="gradient-text">Modern Products</span>
+                </h1>
+                <p class="page-hero__subtitle">
+                    From enterprise backends and fluid mobile apps to conversion-focused web platforms and strategic AI implementations, we build with uncompromising craft.
+                </p>
+                <div class="hero-buttons">
+                    <a href="contact.html" class="primary-button">
+                        <span>Discuss Your Project</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- DETAILED SERVICES SECTION -->
+        <section class="services" style="padding-top: 60px;">
+            <div class="services__orb services__orb--1" aria-hidden="true"></div>
+            <div class="services__orb services__orb--2" aria-hidden="true"></div>
+            <div class="services__grain" aria-hidden="true"></div>
+
+            <div class="services__inner">
+
+                <!-- 1. SOFTWARE DEVELOPMENT -->
+                <article id="software" class="service-detail">
+                    <div class="service-detail__grid">
+                        <div class="service-detail__content">
+                            <div class="service-detail__icon-box">⬡</div>
+                            <span class="services__eyebrow">Enterprise &amp; Custom Systems</span>
+                            <h2 class="service-detail__title">Software Development</h2>
+                            <p class="service-detail__desc">
+                                We architect and build custom software that eliminates operational friction. From high-throughput distributed backends and database schemas to complex multi-tenant SaaS systems, our architectures are engineered for security, zero data loss, and horizontal scaling.
+                            </p>
+                            <div class="service-detail__tags">
+                                <span class="tech-tag">Custom SaaS Platforms</span>
+                                <span class="tech-tag">REST &amp; GraphQL APIs</span>
+                                <span class="tech-tag">Microservices Architecture</span>
+                                <span class="tech-tag">PostgreSQL &amp; Redis</span>
+                                <span class="tech-tag">Python / Node / Go</span>
+                            </div>
+                            <a href="contact.html?service=Software+Development" class="secondary-button">
+                                Inquire About Software Dev ↗
+                            </a>
+                        </div>
+                        <div class="service-detail__visual">
+                            <div class="code-preview">
+<span class="comment">// SiteReel Software Architecture Blueprint</span>
+<span class="keyword">interface</span> ScalableService {
+  readonly serviceName: <span class="string">"CoreEnterpriseAPI"</span>;
+  readonly throughput: <span class="string">"100k+ req/sec"</span>;
+  readonly uptimeSLA: <span class="string">"99.99%"</span>;
+  readonly security: <span class="string">"Zero-Trust / mTLS / Encrypted at rest"</span>;
+}
+
+<span class="keyword">export async function</span> initializePipeline() {
+  <span class="keyword">await</span> connectEventBus();
+  <span class="keyword">await</span> mountMicroservices();
+  <span class="keyword">return</span> <span class="string">"System Operational"</span>;
+}</div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 2. APP DEVELOPMENT -->
+                <article id="app" class="service-detail">
+                    <div class="service-detail__grid service-detail__grid--reversed">
+                        <div class="service-detail__content">
+                            <div class="service-detail__icon-box">📱</div>
+                            <span class="services__eyebrow">Mobile &amp; Cross-Platform</span>
+                            <h2 class="service-detail__title">App Development</h2>
+                            <p class="service-detail__desc">
+                                We design and build fluid mobile applications for iOS and Android that users love using daily. Whether crafting a native Swift/Kotlin experience or a unified Flutter/React Native application, we deliver 60fps animations, intuitive gesture navigation, offline-first data sync, and frictionless store deployment.
+                            </p>
+                            <div class="service-detail__tags">
+                                <span class="tech-tag">iOS (Swift / SwiftUI)</span>
+                                <span class="tech-tag">Android (Kotlin)</span>
+                                <span class="tech-tag">Flutter &amp; Dart</span>
+                                <span class="tech-tag">React Native</span>
+                                <span class="tech-tag">Offline-First Sync</span>
+                                <span class="tech-tag">App Store &amp; Play Store CI</span>
+                            </div>
+                            <a href="contact.html?service=App+Development" class="secondary-button">
+                                Inquire About Mobile Apps ↗
+                            </a>
+                        </div>
+                        <div class="service-detail__visual">
+                            <div class="code-preview">
+<span class="comment">// Kinetic Mobile App Lifecycle</span>
+<span class="keyword">class</span> MobileAppSession <span class="keyword">extends</span> Application {
+  targetPlatforms = [<span class="string">"iOS"</span>, <span class="string">"Android"</span>];
+  renderingEngine = <span class="string">"Hardware Accelerated 60-120fps"</span>;
+  offlineCache = <span class="string">"Bi-directional SQLite Sync"</span>;
+
+  <span class="keyword">launch</span>() {
+    <span class="keyword">this</span>.prepareHaptics();
+    <span class="keyword">return</span> <span class="string">"Ready for User Interaction"</span>;
+  }
+}</div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 3. WEBSITE DEVELOPMENT -->
+                <article id="website" class="service-detail">
+                    <div class="service-detail__grid">
+                        <div class="service-detail__content">
+                            <div class="service-detail__icon-box">🌐</div>
+                            <span class="services__eyebrow">High-Performance Web Platforms</span>
+                            <h2 class="service-detail__title">Website Development</h2>
+                            <p class="service-detail__desc">
+                                Your digital front door should command technical authority. We engineer bespoke websites and web applications that achieve near-perfect Lighthouse scores, instant page loads, and seamless responsive behaviors across all viewports, paired with kinetic motion that elevates your brand identity.
+                            </p>
+                            <div class="service-detail__tags">
+                                <span class="tech-tag">Custom Modern Web</span>
+                                <span class="tech-tag">Next.js &amp; React</span>
+                                <span class="tech-tag">WebGL &amp; Canvas Shaders</span>
+                                <span class="tech-tag">Core Web Vitals 95+</span>
+                                <span class="tech-tag">Technical SEO Architecture</span>
+                            </div>
+                            <a href="contact.html?service=Website+Development" class="secondary-button">
+                                Inquire About Web Development ↗
+                            </a>
+                        </div>
+                        <div class="service-detail__visual">
+                            <div class="code-preview">
+<span class="comment">// Web Performance & Vital Benchmarks</span>
+<span class="keyword">const</span> webPlatformAudit = {
+  firstContentfulPaint: <span class="string">"0.6s"</span>,
+  largestContentfulPaint: <span class="string">"1.1s"</span>,
+  cumulativeLayoutShift: <span class="string">"0.00"</span>,
+  interactionToNextPaint: <span class="string">"48ms"</span>,
+  seoIndexabilityScore: <span class="string">"100/100"</span>,
+  accessibilityRating: <span class="string">"WCAG 2.1 AA Compliant"</span>
+};</div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 4. AI & TECHNOLOGIES CONSULTATION -->
+                <article id="ai" class="service-detail">
+                    <div class="service-detail__grid service-detail__grid--reversed">
+                        <div class="service-detail__content">
+                            <div class="service-detail__icon-box">✦</div>
+                            <span class="services__eyebrow">Strategic Intelligence</span>
+                            <h2 class="service-detail__title">AI &amp; Technologies Consultation</h2>
+                            <p class="service-detail__desc">
+                                AI shouldn't just be an empty bullet point — it must produce real business value. We guide leadership teams on technology stack selection, LLM model integration (Gemini, OpenAI, Claude, open-weights), autonomous agent systems, vector semantic search, and custom workflow automations that scale.
+                            </p>
+                            <div class="service-detail__tags">
+                                <span class="tech-tag">Autonomous Agent Systems</span>
+                                <span class="tech-tag">LLM &amp; RAG Architecture</span>
+                                <span class="tech-tag">Vector Search (Pinecone/pgvector)</span>
+                                <span class="tech-tag">Architecture &amp; Stack Audits</span>
+                                <span class="tech-tag">Intelligent Workflow Automation</span>
+                            </div>
+                            <a href="contact.html?service=AI+%26+Technologies+Consultation" class="secondary-button">
+                                Inquire About AI Consultation ↗
+                            </a>
+                        </div>
+                        <div class="service-detail__visual">
+                            <div class="code-preview">
+<span class="comment">// SiteReel AI Reasoning & Agent Pipeline</span>
+<span class="keyword">const</span> intelligenceLayer = <span class="keyword">new</span> AgenticWorkflow({
+  model: <span class="string">"Enterprise Reasoning Engine"</span>,
+  tools: [<span class="string">"VectorSearch"</span>, <span class="string">"AnalyticsAPI"</span>, <span class="string">"DatabaseConnector"</span>],
+  fallbackPolicy: <span class="string">"Deterministic Verification"</span>,
+  latencyBudget: <span class="string">"&lt; 250ms"</span>
+});</div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 5. CLOUD & SLA SUPPORT -->
+                <article id="support" class="service-detail">
+                    <div class="service-detail__grid">
+                        <div class="service-detail__content">
+                            <div class="service-detail__icon-box">⚙</div>
+                            <span class="services__eyebrow">Reliability &amp; Operations</span>
+                            <h2 class="service-detail__title">Cloud &amp; Ongoing Support</h2>
+                            <p class="service-detail__desc">
+                                We forge long-term engineering partnerships. Beyond deployment, we manage your cloud hosting, container clusters (Docker/Kubernetes), automated security patches, regular backups, and 24/7 SLA monitoring to ensure complete operational continuity.
+                            </p>
+                            <div class="service-detail__tags">
+                                <span class="tech-tag">AWS &amp; Google Cloud</span>
+                                <span class="tech-tag">Docker &amp; Kubernetes</span>
+                                <span class="tech-tag">24/7 Monitoring &amp; Alerting</span>
+                                <span class="tech-tag">Continuous Security Updates</span>
+                                <span class="tech-tag">SLA Guarantees</span>
+                            </div>
+                            <a href="contact.html?service=Product+Support+%26+Maintenance" class="secondary-button">
+                                Inquire About SLA Support ↗
+                            </a>
+                        </div>
+                        <div class="service-detail__visual">
+                            <div class="code-preview">
+<span class="comment">// 24/7 Proactive SLA Health Monitor</span>
+<span class="keyword">const</span> infrastructureHealth = {
+  clusterState: <span class="string">"HEALTHY"</span>,
+  activeRegions: [<span class="string">"us-east"</span>, <span class="string">"eu-central"</span>, <span class="string">"ap-southeast"</span>],
+  autoScalingPolicy: <span class="string">"Dynamic Traffic Spike Adaptation"</span>,
+  incidentSLA: <span class="string">"&lt; 15 min response"</span>
+};</div>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-company">
+                    <div class="footer-logo">SiteReel Solutions</div>
+                    <p>Engineering elite software, mobile applications, high-performance websites, and AI technologies consultation for technical authority and uncompromising standards.</p>
+                </div>
+
+                <div class="footer-column">
+                    <span class="footer-title">Navigation</span>
+                    <a href="index.html#hero">Home</a>
+                    <a href="services.html">Our Services</a>
+                    <a href="index.html#process">Our Process</a>
+                    <a href="about.html">About Us</a>
+                    <a href="contact.html">Contact Us</a>
+                </div>
+
+                <div class="footer-column">
+                    <span class="footer-title">Capabilities</span>
+                    <a href="services.html#software">Software Development</a>
+                    <a href="services.html#app">App Development</a>
+                    <a href="services.html#website">Website Development</a>
+                    <a href="services.html#ai">AI &amp; Tech Consultation</a>
+                    <a href="services.html#support">Cloud &amp; SLA Support</a>
+                </div>
+
+                <div class="footer-column">
+                    <span class="footer-title">Connect &amp; Legal</span>
+                    <a href="mailto:contact@sitereelsolutions.com">contact@sitereelsolutions.com</a>
+                    <a href="https://github.com/rakesh-mishra5719/sitereelsolutions" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Service</a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2026 SiteReel SOLUTIONS. ALL RIGHTS RESERVED.</p>
+                <div class="footer-icons">
+                    <a href="#" title="Return to top" style="display:flex;align-items:center;">
+                        <span class="material-symbols-outlined">arrow_upward</span>
+                    </a>
+                    <span class="material-symbols-outlined">language</span>
+                    <span class="material-symbols-outlined">settings</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
